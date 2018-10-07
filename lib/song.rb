@@ -17,7 +17,7 @@ class Song
   def self.all
     @@songs
   end
-
+  
   extend Findable
   extend Memorable
 
