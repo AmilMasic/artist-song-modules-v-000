@@ -17,7 +17,7 @@ class Song
   def self.all
     @@songs
   end
-
+  include Findable
   extend Memorable
 
   # def self.reset_all
