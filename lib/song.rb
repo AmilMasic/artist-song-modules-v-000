@@ -17,7 +17,7 @@ class Song
   def self.all
     @@songs
   end
-  
+
   extend Findable
   extend Memorable
 
@@ -33,7 +33,7 @@ class Song
     @artist = artist
   end
 
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+  # def to_param
+  #   name.downcase.gsub(' ', '-')
+  # end
 end
