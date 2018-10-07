@@ -19,7 +19,8 @@ class Song
   end
 
   extend Findable
-  extend Memorable
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
   include Paramable
 
   # def self.reset_all
